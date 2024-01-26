@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "quenda";
+    src: url('quenda/Quenda-Medium.otf');
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url('images/background.png');
+    font-family: quenda, Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+    /*background-repeat: no-repeat;
+    background-position: 0px 100px;*/
+}
+
+header {
+    background: url('images/banner.png') center no-repeat;
+    height: 200px;
+}
+
+footer {
+    background: url('images/colors.png') center no-repeat;
+    bottom: 350px;
+    height: 340px;
+    position: relative;
+}
+
+canvas {
+    background: #fff;
+    border: solid 2px #195d97;
+    display: block;
+    margin: 20px auto;
+}
+
+div {
+    text-align: center;
+}
+
+#github-ribbon {
+
+}
+
+p#info {
+    color: #fff;
+    width: 280px;
+    margin: 0 auto;
+    bottom: 390px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    line-height: 280px;
+    background-image: url('images/light-blue-opacity.png');
+    height: 280px;
+}
+
+p#info > span.cancel {
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    bottom: 280px;
+    left: 235px;
+    background-image: url('images/cancel_white.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+p#info > span.text {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+p#message {
+    background-image: url('images/light-blue-opacity.png');
+    bottom: 580px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px 5px;
+    position: relative;
+    text-align: center;
+    visibility: hidden;
+    width: 310px;
+}
+
+p#message.winner {
+    bottom: 710px;
+    height: 290px;
+    padding-top: 20px;
+}
+
+p#message img {
+    width: 310px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#next {
+    visibility: hidden;
+}
+
+.btn {
+    background-color: #1D6AAD;
+    border-color: #195d97;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.3333333;
+    padding: 10px 16px;
+    text-align: center;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background-color: #195d97;
+}
+
+.smartphone-info, #github-ribbon {
+    display: none;
+}
+
+/* Desktop devices */
+
+@media (min-width: 768px) {
+    #github-ribbon {
+        display: block;
+    }
+
+    .smartphone-info {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: -80px;
+        z-index: 99999;
+        background: #c9302c;
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        height: 50px;
+        line-height: 50px;
+        font-size: 23px;
+        font-weight: bold;
+        padding-left: 125px;
+        padding-right: 85px;
+        color: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+}
